@@ -1,2 +1,2 @@
-import { defineConfig } from 'vite';
-export default defineConfig({ base: './' });
+import { defineConfig } from 'vitest/config';
+export default defineConfig({ base: './', esbuild: { jsx: 'automatic' }, test: { environment: 'jsdom', globals: true } });
